@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   SiLeetcode, SiJavascript, SiReact, SiMongodb, 
-  SiNodedotjs, SiFigma, SiGithub,
+  SiNodedotjs, SiGithub,
    SiPython 
 } from 'react-icons/si';
 import { FaLayerGroup, FaJava, FaTerminal, FaTools } from 'react-icons/fa';
@@ -83,19 +83,18 @@ const About = () => {
   </ul>
 </motion.div>
 
-          <motion.div className="abt-tech-card tech-purple glass-card" whileHover={{ y: -5 }}>
-            <div className="tech-card-header">
-              <FaTools className="tech-icon" />
-              <h3>Tools & Workflow</h3>
-            </div>
-            <ul>
-              <li><FaTerminal /> VS Code, Vite, Webpack</li>
-              <li><SiGithub /> Version Control: Git, GitHub</li>
-              <li><SiFigma /> Prototyping: Figma, UI/UX Principles</li>
-              <li><span>🤖</span> AI/Automation: OpenAI API, n8n Engine</li>
-              <li><span>⚡</span> Environment: Linux/Windows Terminal</li>
-            </ul>
-          </motion.div>
+        <motion.div className="abt-tech-card tech-purple glass-card" whileHover={{ y: -5 }}>
+  <div className="tech-card-header">
+    <FaTools className="tech-icon" />
+    <h3>Tools & Workflow</h3>
+  </div>
+  <ul>
+    <li><FaTerminal /> VS Code, Linux/Windows Terminal</li>
+    <li><SiGithub /> Version Control: Git, GitHub</li>
+    <li><span>🔗</span> API Testing: Postman, REST APIs</li>
+    <li><span>🤖</span> AI Integration: OpenAI API</li>
+  </ul>
+</motion.div>
 
           <motion.div className="abt-tech-card tech-orange glass-card" whileHover={{ y: -5 }}>
             <div className="tech-card-header">
