@@ -158,3 +158,73 @@
   .con-v-form { padding: 2rem; }
   .con-v-title { font-size: 2.8rem; }
 }
+
+
+/* 🔥 Extra Mobile Optimization */
+
+@media (max-width: 600px) {
+  .con-v-section {
+    padding: 40px 5%;   /* side padding fix */
+  }
+
+  .con-v-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .con-v-title {
+    font-size: 2.2rem;  /* text thoda compact */
+  }
+
+  .con-v-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .con-v-container {
+    gap: 2rem;  /* spacing reduce */
+  }
+
+  .con-v-info-card {
+    padding: 1.2rem;  /* card compact */
+    gap: 1rem;
+  }
+
+  .con-v-icon-box {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+
+  .con-v-info-text h4 {
+    font-size: 1rem;
+  }
+
+  .con-v-info-text p {
+    font-size: 0.85rem;
+  }
+
+  .con-v-social-box {
+    margin-top: 1.2rem;
+  }
+
+  .con-v-social-icons a {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  .con-v-form {
+    padding: 1.5rem;   /* form padding fix */
+    gap: 1.2rem;
+  }
+
+  .con-v-field input,
+  .con-v-field textarea {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .con-v-submit-btn {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+}

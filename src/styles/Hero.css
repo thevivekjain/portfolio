@@ -1,5 +1,5 @@
 .hero {
-  min-height: 120vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -154,3 +154,66 @@
 /* Animations */
 @keyframes typing { from { width: 0 } to { width: 100% } }
 @keyframes blink { from, to { border-color: transparent } 50% { border-color: var(--accent-color) } }
+
+
+
+
+
+/* 🔥 Extra Mobile Optimization for Hero */
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 80px 5% 40px 5%;   /* top + side fix */
+    margin-top: 0;               /* negative margin remove */
+    gap: 2rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h4 {
+    font-size: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.9rem;   /* better fit */
+    line-height: 1.2;
+  }
+
+  .text-gradient {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    padding: 0 5px;   /* text breathing */
+  }
+
+  .hero-socials {
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  /* Image section */
+  .blob-border {
+    width: 240px;
+    height: 300px;
+    padding: 8px;
+  }
+
+  /* reduce glow for mobile */
+  .blob-border {
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.3),
+                inset 0 0 15px rgba(0, 210, 255, 0.15);
+  }
+}
