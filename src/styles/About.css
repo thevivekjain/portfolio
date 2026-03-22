@@ -1,0 +1,164 @@
+.abt-vivek-section {
+  padding: 10px 5%;
+
+  color: #fff;
+}
+
+.abt-vivek-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* --- NEW HEADER STYLE --- */
+.abt-vivek-section-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.abt-vivek-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.abt-vivek-main-title span { color: #00d2ff; }
+
+.abt-vivek-subtitle {
+  color: #888;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+/* --- HERO CARD (Merged Profile + Bio) --- */
+.abt-vivek-hero-card {
+  display: flex;
+  padding: 3rem;
+  gap: 3rem;
+  border-radius: 25px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.abt-vivek-hero-left {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.abt-vivek-img-container {
+  width: 280px;
+  height: 340px;
+  margin-bottom: 1.5rem;
+  border-radius: 25px;
+  padding: 4px;
+  background: linear-gradient(45deg, #00d2ff, #928dab);
+}
+
+.abt-vivek-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.abt-vivek-quick-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.stat-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #00d2ff;
+}
+
+.abt-vivek-hero-right { flex: 1; }
+
+.abt-vivek-hero-right h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.abt-vivek-hero-right h2 span { color: #00d2ff; }
+
+.abt-vivek-bio-text p {
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.abt-vivek-badge {
+  display: inline-block;
+  border: 1px solid #00d2ff;
+  color: #00d2ff;
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* --- TECH GRID --- */
+.abt-vivek-right-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.abt-tech-card {
+  padding: 1.8rem;
+  border-radius: 20px;
+  border-left: 5px solid transparent;
+}
+
+.tech-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.abt-tech-card ul { list-style: none; }
+.abt-tech-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+.tech-blue { border-left-color: #00d2ff; }
+.tech-blue h3 { color: #00d2ff; }
+.tech-purple { border-left-color: #a18cd1; }
+.tech-purple h3 { color: #a18cd1; }
+.tech-orange { border-left-color: #ffa116; }
+.tech-orange h3 { color: #ffa116; }
+
+.skill-tags { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
+.skill-tags span {
+  background: rgba(255, 161, 22, 0.1);
+  color: #ffa116;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .abt-vivek-hero-card { flex-direction: column; padding: 2rem; text-align: center; }
+  .abt-vivek-hero-left { flex: none; }
+  .abt-vivek-right-grid { grid-template-columns: 1fr; }
+  .abt-vivek-main-title { font-size: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+  .abt-vivek-hero-right h2 { font-size: 1.8rem; }
+  .abt-vivek-img-container { width: 220px; height: 220px; }
+}

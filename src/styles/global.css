@@ -1,0 +1,42 @@
+/* Google Fonts Import: Poppins (Clean & Modern) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  /* Darker Theme (exactly like ref image) */
+  --bg-dark: #000913; /* Very Deep Dark Blue/Black */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  /* Neon Blue */
+  --accent-color: #00d2ff; 
+  --text-main: #ffffff;
+  --text-dim: #b0b8c4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  overflow-x: hidden;
+  /* Smooth scrolling for navbar links */
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism Helper Class */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
