@@ -7,9 +7,19 @@ import '../styles/Project.css';
 import nyayGharImg from '../assets/y.png'; 
 import collegeTrackerImg from '../assets/z.png'; 
 import foodDeliveryImg from '../assets/x.png';
+import homeEaseImg from '../assets/w.png';
 
 const Projects = () => {
   const projectData = [
+    {
+      title: "Home Ease",
+      subtitle: "On-Demand Home Services Marketplace",
+      desc: "Home Ease is a robust full-stack marketplace connecting users with local service providers like plumbers and electricians. It features a sophisticated three-tier architecture (User, Provider, Admin) with role-based dashboards, a real-time booking engine, and a live rating & review system. Built to handle complex workflows, it ensures seamless service scheduling and platform-wide management.",
+      tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
+      github: "https://github.com/thevivekjain/Home-Ease-Frontend",
+      live: "https://home-ease-frontend.vercel.app",
+      img: homeEaseImg 
+    },
     {
       title: "Nyay Ghar",
       subtitle: "Lawyer Management System",
